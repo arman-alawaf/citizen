@@ -1,0 +1,1499 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Best Doctor, Hospital & Ambulance in Khulna | SastoSeba24.com</title>
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <!-- Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    />
+    <!-- Google Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Select2 -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/css/select2.min.css"
+      rel="stylesheet"
+    />
+    <!-- Slick Carousel -->
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"
+    />
+    <!-- Custom CSS -->
+    <style>
+      body {
+        font-family: "Montserrat", sans-serif;
+        background-color: #f8f9fa;
+      }
+      .navbar {
+        box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        background: linear-gradient(45deg, #ffffff, #f8f9fa);
+      }
+      .hero {
+        position: relative;
+        background: url("https://sastoseba24.com/wp-content/uploads/elementor/thumbs/Appointment-Banner.2-scaled-qgjvtirrotkfd2cr56k169t4bewvylr4mv5kor2zg4.jpg")
+          no-repeat center center;
+        background-size: cover;
+        padding: 120px 0;
+        min-height: 100%;
+        display: flex;
+        align-items: center;
+      }
+      .hero .container {
+        background: transparent;
+        padding: 60px 0px;
+        border-radius: 0;
+        box-shadow: none;
+        border: none;
+      }
+      .hero h1 {
+        font-size: 3.5rem;
+        font-weight: 700;
+        margin-bottom: 20px;
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+      }
+      .hero p {
+        font-size: 1.2rem;
+        margin-bottom: 30px;
+      }
+      .services {
+        padding: 80px 0;
+        background: linear-gradient(45deg, #ffffff, #f0f0f0);
+      }
+      .doctors {
+        background: linear-gradient(45deg, #f8f9fa, #e9ecef);
+        padding: 80px 0;
+      }
+      .packages {
+        padding: 80px 0;
+        background: linear-gradient(45deg, #e9ecef, #dee2e6);
+      }
+      .campaign {
+        padding: 80px 0;
+        background: linear-gradient(45deg, #ffffff, #f8f9fa);
+      }
+      .articles {
+        padding: 80px 0;
+        background: linear-gradient(45deg, #f8f9fa, #e9ecef);
+      }
+      .footer {
+        background: linear-gradient(45deg, #343a40, #495057);
+        color: white;
+        padding: 80px 0;
+      }
+      .footer a {
+        color: #adb5bd;
+        transition: color 0.3s;
+      }
+      .footer a:hover {
+        color: white;
+      }
+      .card {
+        margin-bottom: 30px;
+        border: none;
+        border-radius: 15px;
+        box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+        transition: all 0.3s ease;
+        overflow: hidden;
+      }
+      .card:hover {
+        transform: translateY(-10px);
+        box-shadow: 0 15px 35px rgba(0, 0, 0, 0.2);
+      }
+      .card-body {
+        padding: 40px;
+      }
+      .card-title {
+        font-weight: 600;
+        color: #343a40;
+      }
+      .btn-primary {
+        background: linear-gradient(45deg, #007bff, #0056b3);
+        border: none;
+        border-radius: 25px;
+        padding: 12px 30px;
+        font-weight: 600;
+        transition: all 0.3s;
+      }
+      .btn-primary:hover {
+        background: linear-gradient(45deg, #0056b3, #004085);
+        transform: translateY(-2px);
+        box-shadow: 0 5px 15px rgba(0, 123, 255, 0.4);
+      }
+      .services .fas {
+        color: #007bff;
+        margin-bottom: 20px;
+      }
+      h2 {
+        font-weight: 700;
+        color: #343a40;
+        margin-bottom: 20px;
+      }
+      section h2 {
+        text-align: center;
+      }
+      .text-center p {
+        font-size: 1.1rem;
+        color: #6c757d;
+      }
+      .img-fluid {
+        border-radius: 15px;
+        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+      }
+      .navbar-brand img {
+        transition: transform 0.3s;
+      }
+      .navbar-brand:hover img {
+        transform: scale(1.05);
+      }
+      .nav-link {
+        font-weight: 500;
+        transition: color 0.3s;
+      }
+      .nav-link:hover {
+        color: #007bff !important;
+      }
+      .footer img {
+        filter: brightness(0) invert(1);
+      }
+      .form-control {
+        border-radius: 25px;
+        border: 2px solid #dee2e6;
+        transition: border-color 0.3s;
+      }
+      .form-control:focus {
+        border-color: #007bff;
+        box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
+      }
+      @media (max-width: 768px) {
+        .hero {
+          background-size: contain;
+          background-position: center;
+          min-height: 100%;
+          padding: 0px 0;
+        }
+      }
+      /* Custom Select2 styling */
+      .select2-container--default .select2-selection--single {
+        border-radius: 50rem !important;
+        border: 2px solid #007bff !important;
+        height: 50px !important;
+        padding: 10px 20px !important;
+        background: #ffffff !important;
+        box-shadow: 0 2px 10px rgba(0, 123, 255, 0.1) !important;
+        transition: all 0.3s ease !important;
+      }
+      .select2-container--default .select2-selection--single:hover {
+        border-color: #0056b3 !important;
+        box-shadow: 0 4px 15px rgba(0, 123, 255, 0.2) !important;
+      }
+      .select2-container--default .select2-selection__rendered {
+        color: #495057 !important;
+        font-weight: 500 !important;
+        padding-left: 10px !important;
+      }
+      .select2-container--default .select2-selection__placeholder {
+        color: #6c757d !important;
+      }
+      .select2-container--default .select2-selection__arrow {
+        height: 48px !important;
+        right: 15px !important;
+      }
+      .select2-container--default .select2-selection__arrow b {
+        border-color: #007bff transparent transparent transparent !important;
+      }
+      .select2-dropdown {
+        border-radius: 15px !important;
+        border: 2px solid #007bff !important;
+        box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1) !important;
+      }
+      .select2-container--default .select2-results__option {
+        padding: 12px 20px !important;
+        font-weight: 500 !important;
+      }
+      .select2-container--default
+        .select2-results__option--highlighted[aria-selected] {
+        background-color: #007bff !important;
+        color: white !important;
+      }
+      /* Custom Slick Slider Styles */
+      .slick-prev,
+      .slick-next {
+        background: linear-gradient(45deg, #007bff, #0056b3) !important;
+        border: none !important;
+        border-radius: 50% !important;
+        width: 50px !important;
+        height: 50px !important;
+        z-index: 10 !important;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2) !important;
+      }
+      .slick-prev:before,
+      .slick-next:before {
+        color: white !important;
+        font-size: 20px !important;
+        font-weight: bold !important;
+      }
+      .slick-dots {
+        bottom: -50px !important;
+      }
+      .slick-dots li button:before {
+        background: #007bff !important;
+        border-radius: 50% !important;
+        width: 12px !important;
+        height: 12px !important;
+        opacity: 0.5 !important;
+        transition: all 0.3s ease !important;
+      }
+      .slick-dots li.slick-active button:before {
+        background: #007bff !important;
+        opacity: 1 !important;
+        transform: scale(1.2) !important;
+      }
+      /* Slick Slider Gap */
+      .specialist-slider {
+        padding: 0 20px !important;
+      }
+      .specialist-slider .slick-slide {
+        margin-right: 10px !important;
+        margin-left: 10px !important;
+        margin-top: 30px !important;
+      }
+      @media (max-width: 768px) {
+        .slick-next,
+        .slick-prev {
+          right: 0px;
+        }
+        .slick-prev {
+          left: 0px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Header -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top">
+      <div class="container">
+        <a class="navbar-brand" href="#">
+          <img
+            src="https://sastoseba24.com/wp-content/uploads/2020/10/SastoSeba-Logo-150x150-1.png"
+            alt="SastoSeba24.com"
+            height="50"
+          />
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item"><a class="nav-link" href="#">Home</a></li>
+            <li class="nav-item"><a class="nav-link" href="#">Doctors</a></li>
+            <li class="nav-item"><a class="nav-link" href="#">Hospitals</a></li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Ambulances</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Health Packages</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Free Campaign</a>
+            </li>
+            <li class="nav-item"><a class="nav-link" href="#">Articles</a></li>
+            <li class="nav-item"><a class="nav-link" href="#">Contact</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+      <div class="container">
+        <!-- Only background image, no content -->
+      </div>
+    </section>
+
+    <!-- Search Section -->
+    <section
+      class="search py-6"
+      style="
+        background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+        margin: 60px 0;
+      "
+    >
+      <div class="container" style="padding: 0 20px">
+        <h2
+          class="text-center mb-5 fw-bold"
+          style="color: #343a40; margin-bottom: 60px"
+        >
+          <i class="fas fa-search me-2"></i>Find Your Healthcare
+        </h2>
+        <div class="row justify-content-center">
+          <div class="col-md-11" style="margin-bottom: 40px">
+            <div
+              class="card shadow-lg border-0 rounded-4"
+              style="
+                background: rgba(255, 255, 255, 0.95);
+                backdrop-filter: blur(15px);
+                padding: 20px;
+                margin: 20px;
+              "
+            >
+              <div class="card-body p-6" style="padding: 60px">
+                <form>
+                  <div class="row g-5" style="margin-bottom: 40px">
+                    <div class="col-md-4" style="padding: 0 20px">
+                      <label
+                        for="district"
+                        class="form-label fw-bold text-primary mb-3"
+                        style="font-size: 1.1rem"
+                        ><i class="fas fa-map-marker-alt me-2"></i
+                        >District</label
+                      >
+                      <select
+                        class="form-select form-select-lg rounded-pill border-2"
+                        id="district"
+                        style="
+                          border-color: #007bff;
+                          padding: 15px;
+                          margin-bottom: 20px;
+                        "
+                      >
+                        <option></option>
+                      </select>
+                    </div>
+                    <div class="col-md-4" style="padding: 0 20px">
+                      <label
+                        for="thana"
+                        class="form-label fw-bold text-primary mb-3"
+                        style="font-size: 1.1rem"
+                        ><i class="fas fa-building me-2"></i>Thana</label
+                      >
+                      <select
+                        class="form-select form-select-lg rounded-pill border-2"
+                        id="thana"
+                        style="
+                          border-color: #007bff;
+                          padding: 15px;
+                          margin-bottom: 20px;
+                        "
+                      >
+                        <option></option>
+                      </select>
+                    </div>
+                    <div class="col-md-4" style="padding: 0 20px">
+                      <label
+                        for="specialist"
+                        class="form-label fw-bold text-primary mb-3"
+                        style="font-size: 1.1rem"
+                        ><i class="fas fa-user-md me-2"></i>Specialist</label
+                      >
+                      <select
+                        class="form-select form-select-lg rounded-pill border-2"
+                        id="specialist"
+                        style="
+                          border-color: #007bff;
+                          padding: 15px;
+                          margin-bottom: 20px;
+                        "
+                      >
+                        <option value="">All Specialists</option>
+                        <option value="Allergy & Immunology">Allergy & Immunology</option>
+                        <option value="Cardiology">Cardiology</option>
+                        <option value="Dentistry">Dentistry</option>
+                        <option value="Dermatology">Dermatology</option>
+                        <option value="Emergency Medicine">Emergency Medicine</option>
+                        <option value="Endocrinology">Endocrinology</option>
+                        <option value="ENT">ENT (Ear, Nose, Throat)</option>
+                        <option value="Family Medicine">Family Medicine</option>
+                        <option value="Gastroenterology">Gastroenterology</option>
+                        <option value="Gynecology">Gynecology</option>
+                        <option value="Hematology">Hematology</option>
+                        <option value="Infectious Diseases">Infectious Diseases</option>
+                        <option value="Neurology">Neurology</option>
+                        <option value="Nephrology">Nephrology</option>
+                        <option value="Oncology">Oncology</option>
+                        <option value="Ophthalmology">Ophthalmology</option>
+                        <option value="Orthopedics">Orthopedics</option>
+                        <option value="Pediatrics">Pediatrics</option>
+                        <option value="Psychiatry">Psychiatry</option>
+                        <option value="Pulmonology">Pulmonology</option>
+                        <option value="Radiology">Radiology</option>
+                        <option value="Rheumatology">Rheumatology</option>
+                        <option value="Urology">Urology</option>
+                      </select>
+                    </div>
+                  </div>
+                  <div class="text-center" style="margin-top: 60px">
+                    <button
+                      type="submit"
+                      class="btn btn-lg rounded-pill px-6 py-4 fw-bold shadow-lg"
+                      style="
+                        background: linear-gradient(45deg, #007bff, #0056b3);
+                        border: none;
+                        color: white;
+                        transition: all 0.3s;
+                        font-size: 1.2rem;
+                        padding: 20px 40px;
+                      "
+                    >
+                      Search Now <i class="fas fa-arrow-right ms-3"></i>
+                    </button>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Specialists Section -->
+    <section class="specialists py-5">
+      <div class="container">
+        <h2 class="text-center mb-5 fw-bold" style="color: #343a40">
+          <i class="fas fa-stethoscope me-2"></i>Our Specialists
+        </h2>
+        <div class="specialist-slider">
+          <div class="premium-card">
+            <div
+              class="card border shadow-lg rounded-4 text-center bg-white position-relative"
+              style="min-height: 320px"
+            >
+              <div
+                class="card-body p-5 d-flex flex-column justify-content-center"
+              >
+                <i class="fas fa-heart fa-4x mb-4 text-danger"></i>
+                <h5 class="card-title fw-bold text-dark">Cardiology</h5>
+                <p class="card-text text-muted">
+                  Heart & Cardiovascular Specialists
+                </p>
+                <a href="#" class="stretched-link"></a>
+              </div>
+            </div>
+          </div>
+          <div class="premium-card">
+            <div
+              class="card border shadow-lg rounded-4 text-center bg-white position-relative"
+              style="min-height: 320px"
+            >
+              <div
+                class="card-body p-5 d-flex flex-column justify-content-center"
+              >
+                <i class="fas fa-brain fa-4x mb-4 text-primary"></i>
+                <h5 class="card-title fw-bold text-dark">Neurology</h5>
+                <p class="card-text text-muted">
+                  Brain & Nervous System Experts
+                </p>
+                <a href="#" class="stretched-link"></a>
+              </div>
+            </div>
+          </div>
+          <div class="premium-card">
+            <div
+              class="card border shadow-lg rounded-4 text-center bg-white position-relative"
+              style="min-height: 320px"
+            >
+              <div
+                class="card-body p-5 d-flex flex-column justify-content-center"
+              >
+                <i class="fas fa-bone fa-4x mb-4 text-success"></i>
+                <h5 class="card-title fw-bold text-dark">Orthopedics</h5>
+                <p class="card-text text-muted">Bone & Joint Specialists</p>
+                <a href="#" class="stretched-link"></a>
+              </div>
+            </div>
+          </div>
+          <div class="premium-card">
+            <div
+              class="card border shadow-lg rounded-4 text-center bg-white position-relative"
+              style="min-height: 320px"
+            >
+              <div
+                class="card-body p-5 d-flex flex-column justify-content-center"
+              >
+                <i class="fas fa-child fa-4x mb-4 text-warning"></i>
+                <h5 class="card-title fw-bold text-dark">Pediatrics</h5>
+                <p class="card-text text-muted">Children's Health Experts</p>
+                <a href="#" class="stretched-link"></a>
+              </div>
+            </div>
+          </div>
+          <div class="premium-card">
+            <div
+              class="card border shadow-lg rounded-4 text-center bg-white position-relative"
+              style="min-height: 320px"
+            >
+              <div
+                class="card-body p-5 d-flex flex-column justify-content-center"
+              >
+                <i class="fas fa-user-md fa-4x mb-4 text-info"></i>
+                <h5 class="card-title fw-bold text-dark">General Medicine</h5>
+                <p class="card-text text-muted">Comprehensive Healthcare</p>
+                <a href="#" class="stretched-link"></a>
+              </div>
+            </div>
+          </div>
+          <div class="premium-card">
+            <div
+              class="card border shadow-lg rounded-4 text-center bg-white position-relative"
+              style="min-height: 320px"
+            >
+              <div
+                class="card-body p-5 d-flex flex-column justify-content-center"
+              >
+                <i class="fas fa-eye fa-4x mb-4 text-secondary"></i>
+                <h5 class="card-title fw-bold text-dark">Ophthalmology</h5>
+                <p class="card-text text-muted">Eye Care Specialists</p>
+                <a href="#" class="stretched-link"></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Services Section -->
+    <section class="services">
+      <div class="container">
+        <div class="row text-center">
+          <div class="col-md-4">
+            <div class="card">
+              <div class="card-body">
+                <i class="fas fa-user-md fa-3x mb-3"></i>
+                <h5 class="card-title">Doctors</h5>
+                <p class="card-text">Find the best doctors in Khulna.</p>
+                <a href="#" class="btn btn-primary">View Doctors</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card">
+              <div class="card-body">
+                <i class="fas fa-hospital fa-3x mb-3"></i>
+                <h5 class="card-title">Hospitals</h5>
+                <p class="card-text">
+                  Top hospitals for your healthcare needs.
+                </p>
+                <a href="#" class="btn btn-primary">View Hospitals</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card">
+              <div class="card-body">
+                <i class="fas fa-ambulance fa-3x mb-3"></i>
+                <h5 class="card-title">Ambulances</h5>
+                <p class="card-text">24/7 ambulance services.</p>
+                <a href="#" class="btn btn-primary">Book Ambulance</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Home Sample Collection Section -->
+    <section class="home-sample py-5 bg-light">
+        <div class="container-fluid p-0">
+            <div class="row">
+                <div class="col-lg-6 col-12">
+                    <img src="https://sastoseba24.com/wp-content/uploads/elementor/thumbs/Sastoseba-web-Home-Sample-Banner2-qihv4ffrl223msxvl1z1q884px9boz8z0z8ipiu86s.jpg" class="img-fluid w-100" alt="Home Sample Collection">
+                </div>
+                <div class="col-lg-6 col-12 d-flex align-items-center bg-white" style="min-height: 50vh;">
+                    <div class="container py-5">
+                        <h2 class="fw-bold mb-4 text-primary">Home Sample Collection</h2>
+                        <p class="lead mb-5 text-muted">Need medical tests? We provide home sample collection service. Call us or email for booking.</p>
+                        <div class="row g-4">
+                            <div class="col-md-6">
+                                <div class="p-4 bg-light rounded-3 shadow-sm border">
+                                    <i class="fas fa-phone fa-3x text-primary mb-3"></i>
+                                    <h5 class="fw-bold">Call for Help!</h5>
+                                    <a href="tel:01774211151" class="btn btn-primary btn-lg w-100 mt-3">01774-211151</a>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="p-4 bg-light rounded-3 shadow-sm border">
+                                    <i class="fas fa-envelope fa-3x text-primary mb-3"></i>
+                                    <h5 class="fw-bold">Email Support</h5>
+                                    <a href="mailto:info@sastoseba.com" class="btn btn-primary btn-lg w-100 mt-3">info@sastoseba.com</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Doctors Section -->
+    <section class="doctors">
+      <div class="container">
+        <h2 class="text-center mb-4">Featured Doctors</h2>
+        <div class="row">
+          <div class="col-md-4">
+            <div class="card">
+              <img
+                src="https://sastoseba24.com/wp-content/uploads/2020/12/LadyDoctor3-30x30.jpg"
+                class="card-img-top"
+                alt="Doctor"
+              />
+              <div class="card-body">
+                <h5 class="card-title">Dr. Mostofa Kamal</h5>
+                <p class="card-text">
+                  MBBS, MRCP(London), MCPS (America), MRCP(UK), BCS (Health)
+                </p>
+                <p>Khulna</p>
+              </div>
+            </div>
+          </div>
+          <!-- Add more doctors if needed -->
+        </div>
+        <div class="text-center mt-4">
+          <a href="#" class="btn btn-primary">Show All</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Health Packages Section -->
+    <section class="packages">
+      <div class="container text-center">
+        <h2>Health Packages</h2>
+        <p>
+          Lets visit & compare the Health Packages. Chose your Package without
+          confusion.
+        </p>
+        <img
+          src="https://sastoseba24.com/wp-content/uploads/elementor/thumbs/Hospital-Package2-scaled-qgjvtirrotkfd2cr56k169t4bewvylr4mv5kor2zg4.jpg"
+          alt="Health Packages"
+          class="img-fluid"
+        />
+        <br /><br />
+        <a href="#" class="btn btn-primary">See Packages</a>
+      </div>
+    </section>
+
+    <!-- Free Campaign Section -->
+    <section class="campaign">
+      <div class="container text-center">
+        <h2>Free Campaign</h2>
+        <p>Lets visit free campaigns and get health service without Costing</p>
+        <img
+          src="https://sastoseba24.com/wp-content/uploads/2023/12/SS-Cleft-baby-Banner.jpg"
+          alt="Free Campaign"
+          class="img-fluid"
+        />
+      </div>
+    </section>
+
+    <!-- Articles Section -->
+    <section class="articles">
+      <div class="container">
+        <h2 class="text-center mb-4">Latest Articles</h2>
+        <p class="text-center">
+          Let's Read Professional Articles from authenticated Doctors
+        </p>
+        <div class="row">
+          <div class="col-md-4">
+            <div class="card">
+              <img
+                src="https://sastoseba24.com/wp-content/uploads/2025/08/Skin_Care_Image-545x389.jpg"
+                class="card-img-top"
+                alt="Article"
+              />
+              <div class="card-body">
+                <h5 class="card-title">
+                  🧃 Skin Care Tips from Dermatologists
+                </h5>
+                <p>By Israt Jahan</p>
+                <small>August 25, 2025</small>
+              </div>
+            </div>
+          </div>
+          <!-- Add more articles -->
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-4">
+            <img
+              src="https://sastoseba24.com/wp-content/uploads/2020/10/SastoSeba-Logo-150x150-1.png"
+              alt="Logo"
+              height="50"
+            />
+            <p>
+              You Need Best Doctor, Hospital or Ambulance? Just visit
+              www.Sastoseba.com or Call : 01774-211151
+            </p>
+            <p>Email: info@sastoseba24.com</p>
+            <p>Phone: (+88) 01774-211151</p>
+            <div>
+              <a href="#"><i class="fab fa-facebook"></i></a>
+              <a href="#"><i class="fab fa-twitter"></i></a>
+              <a href="#"><i class="fab fa-linkedin"></i></a>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <h5>Newsletter</h5>
+            <p>Subscribe us for our Next Update.</p>
+            <form>
+              <input
+                type="email"
+                class="form-control"
+                placeholder="Enter your email"
+              />
+              <button class="btn btn-primary mt-2">Subscribe</button>
+            </form>
+          </div>
+          <div class="col-md-4">
+            <h5>Download Mobile App</h5>
+            <a href="#"
+              ><img
+                src="https://sastoseba24.com/wp-content/uploads/2019/09/img-06-1.png"
+                alt="Android"
+                height="50"
+            /></a>
+            <a href="#"
+              ><img
+                src="https://sastoseba24.com/wp-content/uploads/2019/09/img-05-1.png"
+                alt="iOS"
+                height="50"
+            /></a>
+          </div>
+        </div>
+        <hr />
+        <p class="text-center">
+          Copyrights © 2023-24 by SastoSeba.com. All Rights Reserved.
+        </p>
+      </div>
+    </footer>
+
+    <!-- jQuery -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Select2 JS -->
+    <script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js"></script>
+    <!-- Slick JS -->
+    <script
+      type="text/javascript"
+      src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"
+    ></script>
+    <script>
+      const thanasData = {
+        // Dhaka Division
+        Dhaka: [
+          "Mirpur",
+          "Uttara",
+          "Dhanmondi",
+          "Gulshan",
+          "Mohammadpur",
+          "Banani",
+          "Tejgaon",
+          "Ramna",
+          "Motijheel",
+          "Sabujbagh",
+          "Khilgaon",
+          "Paltan",
+          "Wari",
+          "Kotwali",
+          "Sutrapur",
+          "Hazaribagh",
+          "Demra",
+          "Kadamtali",
+          "Gandaria",
+          "Shyampur",
+          "Kamrangirchar",
+          "Jatrabari",
+          "Dhamrai",
+          "Keraniganj",
+          "Nawabganj",
+          "Savar",
+          "Dohar",
+        ],
+        Gazipur: [
+          "Gazipur Sadar",
+          "Kaliakair",
+          "Kapasia",
+          "Sreepur",
+          "Kaliganj",
+        ],
+        Kishoreganj: [
+          "Kishoreganj Sadar",
+          "Bajitpur",
+          "Bhairab",
+          "Hossainpur",
+          "Itna",
+          "Karimganj",
+          "Katiadi",
+          "Kuliarchar",
+          "Mithamain",
+          "Nikli",
+          "Pakundia",
+          "Tarail",
+        ],
+        Manikganj: [
+          "Manikganj Sadar",
+          "Singair",
+          "Shibalaya",
+          "Saturia",
+          "Harirampur",
+          "Ghior",
+          "Daulatpur",
+        ],
+        Munshiganj: [
+          "Munshiganj Sadar",
+          "Sreenagar",
+          "Sirajdikhan",
+          "Louhajang",
+          "Gazaria",
+          "Tongibari",
+        ],
+        Narayanganj: [
+          "Narayanganj Sadar",
+          "Araihazar",
+          "Sonargaon",
+          "Bandar",
+          "Rupganj",
+        ],
+        Narsingdi: [
+          "Narsingdi Sadar",
+          "Belabo",
+          "Monohardi",
+          "Palash",
+          "Raipura",
+          "Shibpur",
+        ],
+        Tangail: [
+          "Tangail Sadar",
+          "Sakhipur",
+          "Basail",
+          "Madhupur",
+          "Ghatail",
+          "Kalihati",
+          "Nagarpur",
+          "Mirzapur",
+          "Gopalpur",
+          "Delduar",
+          "Bhuapur",
+          "Dhanbari",
+        ],
+        Faridpur: [
+          "Faridpur Sadar",
+          "Alfadanga",
+          "Bhanga",
+          "Boalmari",
+          "Charbhadrasan",
+          "Madhukhali",
+          "Nagarkanda",
+          "Sadarpur",
+          "Shaltha",
+        ],
+        Gopalganj: [
+          "Gopalganj Sadar",
+          "Kashiani",
+          "Kotalipara",
+          "Muksudpur",
+          "Tungipara",
+        ],
+        Madaripur: ["Madaripur Sadar", "Kalkini", "Rajoir", "Shibchar"],
+        Rajbari: [
+          "Rajbari Sadar",
+          "Baliakandi",
+          "Goalandaghat",
+          "Pangsha",
+          "Kalukhali",
+        ],
+        Shariatpur: [
+          "Shariatpur Sadar",
+          "Damudya",
+          "Gosairhat",
+          "Naria",
+          "Zajira",
+          "Bhedarganj",
+        ],
+        // Chittagong Division
+        Chittagong: [
+          "Chittagong Sadar",
+          "Pahartali",
+          "Kotwali",
+          "Halishahar",
+          "Double Mooring",
+          "Patenga",
+          "Karnaphuli",
+          "Anwara",
+          "Boalkhali",
+          "Chandanaish",
+          "Fatikchhari",
+          "Hathazari",
+          "Lohagara",
+          "Mirsharai",
+          "Patiya",
+          "Rangunia",
+          "Raozan",
+          "Sandwip",
+          "Satkania",
+          "Sitakunda",
+        ],
+        CoxsBazar: [
+          "Coxs Bazar Sadar",
+          "Chakaria",
+          "Kutubdia",
+          "Maheshkhali",
+          "Ramu",
+          "Teknaf",
+          "Ukhia",
+          "Pekua",
+        ],
+        Bandarban: [
+          "Bandarban Sadar",
+          "Thanchi",
+          "Lama",
+          "Naikhongchhari",
+          "Ali Kadam",
+          "Rowangchhari",
+          "Ruma",
+        ],
+        Rangamati: [
+          "Rangamati Sadar",
+          "Belaichhari",
+          "Bagaichhari",
+          "Barkal",
+          "Juraichhari",
+          "Rajasthali",
+          "Kaptai",
+          "Langadu",
+          "Naniarchar",
+          "Kaukhali",
+        ],
+        Khagrachhari: [
+          "Khagrachhari Sadar",
+          "Dighinala",
+          "Lakshmichhari",
+          "Mahalchhari",
+          "Manikchhari",
+          "Matiranga",
+          "Panchhari",
+          "Ramgarh",
+        ],
+        Feni: [
+          "Feni Sadar",
+          "Chhagalnaiya",
+          "Daganbhuiyan",
+          "Parshuram",
+          "Fulgazi",
+          "Sonagazi",
+        ],
+        Noakhali: [
+          "Noakhali Sadar",
+          "Begumganj",
+          "Chatkhil",
+          "Companiganj",
+          "Hatiya",
+          "Kabirhat",
+          "Senbagh",
+          "Sonaimuri",
+          "Subarnachar",
+        ],
+        Lakshmipur: [
+          "Lakshmipur Sadar",
+          "Kamalnagar",
+          "Raipur",
+          "Ramganj",
+          "Ramgati",
+        ],
+        Chandpur: [
+          "Chandpur Sadar",
+          "Faridganj",
+          "Haimchar",
+          "Haziganj",
+          "Kachua",
+          "Matlab Dakshin",
+          "Matlab Uttar",
+          "Shahrasti",
+        ],
+        Brahmanbaria: [
+          "Brahmanbaria Sadar",
+          "Ashuganj",
+          "Bancharampur",
+          "Bijoynagar",
+          "Kasba",
+          "Nabinagar",
+          "Nasirnagar",
+          "Sarail",
+        ],
+        Comilla: [
+          "Comilla Sadar Dakshin",
+          "Barura",
+          "Brahmanpara",
+          "Burichang",
+          "Chandina",
+          "Chauddagram",
+          "Daudkandi",
+          "Debidwar",
+          "Homna",
+          "Laksam",
+          "Muradnagar",
+          "Nangalkot",
+          "Comilla Sadar Uttar",
+          "Meghna",
+          "Titas",
+        ],
+        // Khulna Division
+        Khulna: [
+          "Daulatpur",
+          "Khalishpur",
+          "Sonadanga",
+          "Khulna Sadar",
+          "Rupsa",
+          "Terokhada",
+          "Dumuria",
+          "Batiaghata",
+          "Dacope",
+          "Paikgachha",
+          "Phultala",
+        ],
+        Bagerhat: [
+          "Bagerhat Sadar",
+          "Chitalmari",
+          "Fakirhat",
+          "Kachua",
+          "Mollahat",
+          "Mongla",
+          "Morrelganj",
+          "Rampal",
+          "Sarankhola",
+        ],
+        Chuadanga: ["Chuadanga Sadar", "Alamdanga", "Damurhuda", "Jibannagar"],
+        Jessore: [
+          "Jessore Sadar",
+          "Abhaynagar",
+          "Bagherpara",
+          "Chaugachha",
+          "Jhikargachha",
+          "Keshabpur",
+          "Manirampur",
+          "Sharsha",
+        ],
+        Jhenaidah: [
+          "Jhenaidah Sadar",
+          "Harinakunda",
+          "Kaliganj",
+          "Kotchandpur",
+          "Maheshpur",
+          "Shailkupa",
+        ],
+        Magura: ["Magura Sadar", "Mohammadpur", "Shalikha", "Sreepur"],
+        Meherpur: ["Meherpur Sadar", "Gangni", "Mujibnagar"],
+        Narail: ["Narail Sadar", "Kalia", "Lohagara"],
+        Satkhira: [
+          "Satkhira Sadar",
+          "Assasuni",
+          "Debhata",
+          "Kalaroa",
+          "Kaliganj",
+          "Shyamnagar",
+          "Tala",
+        ],
+        // Rajshahi Division
+        Rajshahi: [
+          "Rajshahi Sadar",
+          "Bagha",
+          "Bagmara",
+          "Charghat",
+          "Durgapur",
+          "Godagari",
+          "Mohanpur",
+          "Paba",
+          "Puthia",
+          "Tanore",
+        ],
+        Chapainawabganj: [
+          "Chapai Nawabganj Sadar",
+          "Bholahat",
+          "Gomastapur",
+          "Nachole",
+          "Shibganj",
+        ],
+        Naogaon: [
+          "Naogaon Sadar",
+          "Atrai",
+          "Badalgachhi",
+          "Dhamoirhat",
+          "Manda",
+          "Mohadevpur",
+          "Niamatpur",
+          "Patnitala",
+          "Porsha",
+          "Raninagar",
+          "Sapahar",
+        ],
+        Natore: [
+          "Natore Sadar",
+          "Bagatipara",
+          "Baraigram",
+          "Gurudaspur",
+          "Lalpur",
+          "Singra",
+        ],
+        Pabna: [
+          "Pabna Sadar",
+          "Atgharia",
+          "Bera",
+          "Bhangura",
+          "Chatmohar",
+          "Faridpur",
+          "Ishwardi",
+          "Santhia",
+          "Sujanagar",
+        ],
+        Sirajganj: [
+          "Sirajganj Sadar",
+          "Belkuchi",
+          "Chauhali",
+          "Kamarkhanda",
+          "Kazipur",
+          "Raiganj",
+          "Shahjadpur",
+          "Tarash",
+          "Ullahpara",
+        ],
+        Bogra: [
+          "Bogra Sadar",
+          "Adamdighi",
+          "Bogra",
+          "Dhunat",
+          "Dhupchanchia",
+          "Gabtali",
+          "Kahaloo",
+          "Nandigram",
+          "Sariakandi",
+          "Shajahanpur",
+          "Sherpur",
+          "Shibganj",
+        ],
+        Joypurhat: [
+          "Joypurhat Sadar",
+          "Akkelpur",
+          "Kalai",
+          "Khetlal",
+          "Panchbibi",
+        ],
+        // Barisal Division
+        Barisal: [
+          "Barisal Sadar",
+          "Agailjhara",
+          "Babuganj",
+          "Bakerganj",
+          "Banaripara",
+          "Gaurnadi",
+          "Hizla",
+          "Mehendiganj",
+          "Muladi",
+          "Wazirpur",
+        ],
+        Bhola: [
+          "Bhola Sadar",
+          "Burhanuddin",
+          "Char Fasson",
+          "Daulatkhan",
+          "Lalmohan",
+          "Manpura",
+          "Tazumuddin",
+        ],
+        Jhalokati: ["Jhalokati Sadar", "Kathalia", "Nalchity", "Rajapur"],
+        Patuakhali: [
+          "Patuakhali Sadar",
+          "Bauphal",
+          "Dashmina",
+          "Dumki",
+          "Galachipa",
+          "Kalapara",
+          "Mirzaganj",
+          "Rangabali",
+        ],
+        Pirojpur: [
+          "Pirojpur Sadar",
+          "Bhandaria",
+          "Kawkhali",
+          "Mathbaria",
+          "Nazirpur",
+          "Nesarabad",
+          "Zianagar",
+        ],
+        // Sylhet Division
+        Sylhet: [
+          "Sylhet Sadar",
+          "Beanibazar",
+          "Bishwanath",
+          "Companiganj",
+          "Fenchuganj",
+          "Golapganj",
+          "Gowainghat",
+          "Jaintiapur",
+          "Kanaighat",
+          "Osmani Nagar",
+          "Sylhet Sadar",
+          "Zakiganj",
+        ],
+        Maulvibazar: [
+          "Maulvibazar Sadar",
+          "Barlekha",
+          "Juri",
+          "Kamalganj",
+          "Kulaura",
+          "Rajnagar",
+          "Sreemangal",
+        ],
+        Sunamganj: [
+          "Sunamganj Sadar",
+          "Bishwamvarpur",
+          "Chhatak",
+          "Derai",
+          "Dharampasha",
+          "Dowarabazar",
+          "Jagannathpur",
+          "Jamalganj",
+          "Sullah",
+          "Sunamganj Sadar",
+          "Tahirpur",
+        ],
+        Habiganj: [
+          "Habiganj Sadar",
+          "Ajmiriganj",
+          "Bahubal",
+          "Baniachang",
+          "Chunarughat",
+          "Habiganj Sadar",
+          "Lakhai",
+          "Madhabpur",
+          "Nabiganj",
+        ],
+        // Rangpur Division
+        Rangpur: [
+          "Rangpur Sadar",
+          "Badarganj",
+          "Gangachhara",
+          "Kaunia",
+          "Mithapukur",
+          "Pirgachha",
+          "Pirganj",
+          "Taraganj",
+        ],
+        Dinajpur: [
+          "Dinajpur Sadar",
+          "Birampur",
+          "Birganj",
+          "Biral",
+          "Bochaganj",
+          "Chirirbandar",
+          "Fulbari",
+          "Ghoraghat",
+          "Hakimpur",
+          "Kaharole",
+          "Khansama",
+          "Nawabganj",
+          "Parbatipur",
+        ],
+        Gaibandha: [
+          "Gaibandha Sadar",
+          "Fulchhari",
+          "Gobindaganj",
+          "Palashbari",
+          "Sadullapur",
+          "Saghata",
+          "Sundarganj",
+        ],
+        Kurigram: [
+          "Kurigram Sadar",
+          "Bhurungamari",
+          "Char Rajibpur",
+          "Chilmari",
+          "Phulbari",
+          "Rajibpur",
+          "Rajarhat",
+          "Ulipur",
+        ],
+        Lalmonirhat: [
+          "Lalmonirhat Sadar",
+          "Aditmari",
+          "Hatibandha",
+          "Kaliganj",
+          "Patgram",
+        ],
+        Nilphamari: [
+          "Nilphamari Sadar",
+          "Dimla",
+          "Domar",
+          "Jaldhaka",
+          "Kishoreganj",
+          "Saidpur",
+        ],
+        Panchagarh: [
+          "Panchagarh Sadar",
+          "Atwari",
+          "Boda",
+          "Debiganj",
+          "Tetulia",
+        ],
+        Thakurgaon: [
+          "Thakurgaon Sadar",
+          "Baliadangi",
+          "Haripur",
+          "Pirganj",
+          "Ranisankail",
+        ],
+        // Mymensingh Division
+        Mymensingh: [
+          "Mymensingh Sadar",
+          "Bhaluka",
+          "Dhobaura",
+          "Fulbaria",
+          "Gaffargaon",
+          "Gauripur",
+          "Haluaghat",
+          "Ishwarganj",
+          "Muktagacha",
+          "Nandail",
+          "Phulpur",
+          "Trishal",
+        ],
+        Jamalpur: [
+          "Jamalpur Sadar",
+          "Bakshiganj",
+          "Dewanganj",
+          "Islampur",
+          "Madarganj",
+          "Melandaha",
+          "Sarishabari",
+        ],
+        Netrokona: [
+          "Netrokona Sadar",
+          "Atpara",
+          "Barhatta",
+          "Durgapur",
+          "Khaliajuri",
+          "Kalmakanda",
+          "Kendua",
+          "Madan",
+          "Mohanganj",
+          "Purbadhala",
+        ],
+        Sherpur: [
+          "Sherpur Sadar",
+          "Jhenaigati",
+          "Nakla",
+          "Nalitabari",
+          "Sreebardi",
+        ],
+      };
+
+      $(document).ready(function () {
+        // Populate district options alphabetically
+        const districts = Object.keys(thanasData).sort();
+        districts.forEach((district) => {
+          $("#district").append(
+            `<option value="${district}">${district}</option>`
+          );
+        });
+
+        // Initialize Select2
+        $("#district").select2({
+          placeholder: "Select District",
+          allowClear: true,
+          width: "100%",
+        });
+
+        $("#thana").select2({
+          placeholder: "Select Thana",
+          allowClear: true,
+          width: "100%",
+        });
+
+        $("#specialist").select2({
+          placeholder: "Select Specialist",
+          allowClear: true,
+          width: "100%",
+        });
+
+        // Handle district change
+        $("#district").on("change", function () {
+          const val = $(this).val();
+          const thanaSelect = $("#thana");
+          thanaSelect.empty();
+          thanaSelect.append('<option value=""></option>');
+          if (thanasData[val]) {
+            thanasData[val].sort().forEach((thana) => {
+              thanaSelect.append(`<option value="${thana}">${thana}</option>`);
+            });
+          }
+          // Reinitialize Select2 for thana
+          thanaSelect.select2("destroy").select2({
+            placeholder: "Select Thana",
+            allowClear: true,
+            width: "100%",
+          });
+        });
+
+        // Initialize Slick Slider for specialists
+        $(".specialist-slider").slick({
+          autoplay: true,
+          autoplaySpeed: 3000,
+          slidesToShow: 4,
+          slidesToScroll: 1,
+          dots: true,
+          arrows: true,
+          responsive: [
+            {
+              breakpoint: 1024,
+              settings: {
+                slidesToShow: 3,
+                slidesToScroll: 1,
+              },
+            },
+            {
+              breakpoint: 768,
+              settings: {
+                slidesToShow: 2,
+                slidesToScroll: 1,
+              },
+            },
+            {
+              breakpoint: 480,
+              settings: {
+                slidesToShow: 1,
+                slidesToScroll: 1,
+              },
+            },
+          ],
+        });
+      });
+    </script>
+  </body>
+</html>

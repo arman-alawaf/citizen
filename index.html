@@ -1,11 +1,553 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    
-</body>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Best Doctor, Hospital in Khulna | SastoSeba24.com</title>
+    <link rel="shortcut icon" href="https://sastoseba24.com/wp-content/uploads/2020/10/SastoSeba-Logo-150x150-1.png" type="image/x-icon">
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+      integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/brands.min.css"
+      integrity="sha512-WxpJXPm/Is1a/dzEdhdaoajpgizHQimaLGL/QqUIAjIihlQqlPQb1V9vkGs9+VzXD7rgI6O+UsSKl4u5K36Ydw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/fontawesome.min.css"
+      integrity="sha512-M5Kq4YVQrjg5c2wsZSn27Dkfm/2ALfxmun0vUE3mPiJyK53hQBHYCVAtvMYEC7ZXmYLg8DVG4tF8gD27WmDbsg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/regular.min.css"
+      integrity="sha512-x3gns+l9p4mIK7vYLOCUoFS2P1gavFvnO9Its8sr0AkUk46bgf9R51D8xeRUwCSk+W93YbXWi19BYzXDNBH5SA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/solid.min.css"
+      integrity="sha512-EHa6vH03/Ty92WahM0/tet1Qicl76zihDCkBnFhN3kFGQkC+mc86d7V+6y2ypiLbk3h0beZAGdUpzfMcb06cMg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <style>
+      :root {
+        --color1: #15b3b2;
+      }
+      .rounded-custom {
+        border-radius: 30px;
+      }
+      .btn {
+        text-transform: uppercase;
+        border-radius: 800px;
+        font-weight: 600;
+        letter-spacing: 1px;
+        border-width: 2px;
+        transition: all .3s;
+        padding: 5px 25px;
+      }
+      .btn:hover {
+        transform: scale(1.2);
+      }
+      a {
+        text-decoration: none;
+        color: var(--color1);
+      }
+      .form-control:focus {
+        color: var(--bs-body-color);
+        background-color: var(--bs-body-bg);
+        border-color: #86b7fe;
+        outline: 0;
+        box-shadow: none;
+      }
+      .btn-outline-primary {
+    --bs-btn-color: var(--color1);
+    --bs-btn-border-color: var(--color1);
+    --bs-btn-hover-color: #fff;
+    --bs-btn-hover-bg: var(--color1);
+    --bs-btn-hover-border-color: var(--color1);
+    --bs-btn-focus-shadow-rgb: 13,110,253;
+    --bs-btn-active-color: #fff;
+    --bs-btn-active-bg: var(--color1);
+    --bs-btn-active-border-color: var(--color1);
+    --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+    --bs-btn-disabled-color: var(--color1);
+    --bs-btn-disabled-bg: transparent;
+    --bs-btn-disabled-border-color: var(--color1);
+    --bs-gradient: none;
+}
+.btn-primary {
+    --bs-btn-color: #fff;
+    --bs-btn-bg: var(--color1);
+    --bs-btn-border-color: var(--color1);
+    --bs-btn-hover-color: #fff;
+    --bs-btn-hover-bg: var(--color1);
+    --bs-btn-hover-border-color: var(--color1);
+    --bs-btn-focus-shadow-rgb: 49,132,253;
+    --bs-btn-active-color: #fff;
+    --bs-btn-active-bg: var(--color1);
+    --bs-btn-active-border-color: var(--color1);
+    --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+    --bs-btn-disabled-color: #fff;
+    --bs-btn-disabled-bg: var(--color1);
+    --bs-btn-disabled-border-color: var(--color1);
+}
+.nav-link {
+    display: block;
+    padding: var(--bs-nav-link-padding-y) var(--bs-nav-link-padding-x);
+    font-size: var(--bs-nav-link-font-size);
+    font-weight: 600;
+    color: var(--bs-nav-link-color);
+    text-decoration: none;
+    background: 0 0;
+    border: 0;
+    transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out;
+    text-transform: uppercase;
+
+}
+.navbar-nav .nav-link.active, .navbar-nav .nav-link.show {
+    color: var(--color1);
+}
+.nav-link:focus, .nav-link:hover {
+    color: var(--color1);
+}
+.dropdown-item {
+    display: block;
+    width: 100%;
+    padding: var(--bs-dropdown-item-padding-y) var(--bs-dropdown-item-padding-x);
+    clear: both;
+    font-weight: 600;
+    color: var(--bs-dropdown-link-color);
+    text-align: inherit;
+    text-decoration: none;
+    white-space: nowrap;
+    background-color: transparent;
+    border: 0;
+    border-radius: var(--bs-dropdown-item-border-radius,0);
+    text-transform: uppercase;
+}
+.dropdown-item:focus, .dropdown-item:hover {
+    color: var(--color1);
+    background-color: transparent;
+}
+    </style>
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg bg-white shadow-sm sticky-top">
+      <div class="container">
+        <a class="navbar-brand" href="#">
+          <img src="https://sastoseba24.com/wp-content/uploads/2020/10/SastoSeba-Logo-150x150-1.png" alt="logo" style="height: 40px;width: auto;">
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav m-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Link</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                Dropdown
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Action</a></li>
+                <li><a class="dropdown-item" href="#">Another action</a></li>
+                <li><hr class="dropdown-divider" /></li>
+                <li>
+                  <a class="dropdown-item" href="#">Something else here</a>
+                </li>
+              </ul>
+            </li>
+          </ul>
+          <div class="d-flex">
+            <a class="btn btn-outline-primary"> Search </a>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <section>
+      <img
+        src="https://sastoseba24.com/wp-content/uploads/elementor/thumbs/Appointment-Banner.2-scaled-qgjvtirrotkfd2cr56k169t4bewvylr4mv5kor2zg4.jpg"
+        alt="image"
+        style="width: 100%; height: auto"
+      />
+    </section>
+
+    <section>
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6"></div>
+          <div class="col-md-6"></div>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="container text-center py-5">
+        <div class="row">
+          <div class="col-md-12">
+            <h2>Home Sample Collection</h2>
+          </div>
+          <div class="col-md-12 py-3">
+            <img
+              src="https://sastoseba24.com/wp-content/uploads/elementor/thumbs/Sastoseba-web-Home-Sample-Banner2-qihv4ffrl223msxvl1z1q884px9boz8z0z8ipiu86s.jpg"
+              alt="image"
+              class="img-fluid rounded-custom"
+            />
+          </div>
+          <div class="col-md-12">
+            <a href="" class="btn btn-primary">Book Sample Order</a>
+          </div>
+          <div class="col-md-12"></div>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="container text-center py-5">
+        <div class="row">
+          <div class="col-md-12">
+            <h2>Health Packages</h2>
+            <p>
+              Lets visit & compare the Health Packages. Chose your Package
+              without confusion.
+            </p>
+          </div>
+          <div class="col-md-12 py-3">
+            <img
+              src="https://sastoseba24.com/wp-content/uploads/elementor/thumbs/Hospital-Package2-scaled-qgjvtirrotkfd2cr56k169t4bewvylr4mv5kor2zg4.jpg"
+              alt="image"
+              class="img-fluid rounded-custom"
+            />
+          </div>
+          <div class="col-md-12">
+            <a href="" class="btn btn-primary">See Packages</a>
+          </div>
+          <div class="col-md-12"></div>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="container text-center py-5">
+        <div class="row">
+          <div class="col-md-12">
+            <h2>Free Campaign</h2>
+            <p>
+              Lets visit free campaigns and get health service without Costing
+            </p>
+          </div>
+          <div class="col-md-12 py-3">
+            <img
+              src="https://sastoseba24.com/wp-content/uploads/2023/12/SS-Cleft-baby-Banner.jpg"
+              alt="image"
+              class="img-fluid rounded-custom"
+            />
+          </div>
+          <div class="col-md-12">
+            <a href="" class="btn btn-primary">See Packages</a>
+          </div>
+          <div class="col-md-12"></div>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <style>
+        .read-more-link {
+          position: relative;
+          display: inline-flex;
+          align-items: center;
+          gap: 6px; /* space between text and icon */
+          text-decoration: none;
+          transition: color 0.3s ease;
+          font-weight: 500;
+        }
+
+        .read-more-link i {
+          display: inline-block;
+          transition: transform 0.3s ease;
+        }
+
+        .read-more-link:hover {
+          color: #0bd3ff;
+        }
+
+        .read-more-link:hover i {
+          transform: translateX(5px); /* move icon slightly right */
+        }
+        .read-more-link:hover i {
+          animation: shake 0.8s ease-in-out infinite;
+        }
+
+        @keyframes shake {
+          0% {
+            transform: translateX(0);
+          }
+          25% {
+            transform: translateX(4px);
+          }
+          50% {
+            transform: translateX(0);
+          }
+          75% {
+            transform: translateX(-4px);
+          }
+          100% {
+            transform: translateX(0);
+          }
+        }
+      </style>
+      <div class="container py-5">
+        <div class="row">
+          <div class="col-md-4 mb-4">
+            <div class="card">
+              <img
+                src="https://sastoseba24.com/wp-content/uploads/2025/08/Skin_Care_Image-545x389.jpg"
+                class="card-img-top"
+                alt="image"
+              />
+              <div class="card-body">
+                <h5 class="card-title">Card title</h5>
+                <p class="card-text">
+                  Some quick example text to build on the card title and make up
+                  the bulk of the card’s content.
+                </p>
+                <a href="#" class="read-more-link"
+                  >Read More <i class="fa-solid fa-angle-right"></i
+                ></a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 mb-4">
+            <div class="card">
+              <img
+                src="https://sastoseba24.com/wp-content/uploads/2020/12/Mask-Artical1-545x389.jpg"
+                class="card-img-top"
+                alt="image"
+              />
+              <div class="card-body">
+                <h5 class="card-title">Card title</h5>
+                <p class="card-text">
+                  Some quick example text to build on the card title and make up
+                  the bulk of the card’s content.
+                </p>
+                <a href="#" class="read-more-link"
+                  >Read More <i class="fa-solid fa-angle-right"></i
+                ></a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 mb-4">
+            <div class="card">
+              <img
+                src="https://sastoseba24.com/wp-content/uploads/2020/12/aislamiento-covid-545x389.jpg"
+                class="card-img-top"
+                alt="image"
+              />
+              <div class="card-body">
+                <h5 class="card-title">Card title</h5>
+                <p class="card-text">
+                  Some quick example text to build on the card title and make up
+                  the bulk of the card’s content.
+                </p>
+                <a href="#" class="read-more-link"
+                  >Read More <i class="fa-solid fa-angle-right"></i
+                ></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <style>
+        .footer-top-icon{
+          transition: all .3s;
+        }
+        .footer-top-icon:hover{
+          transform: scale(1.5);
+        }
+      </style>
+      <div class="container">
+        <div class="row justify-content-center">
+          <div
+            class="col-md-6 col-10 d-flex align-items-stretch"
+            style="
+              height: 80px;
+              border-radius: 800px;
+              background-color: white;
+              box-shadow: 0px 0px 2px gray;
+            "
+          >
+            <div
+              class="d-flex w-100 h-100"
+              style="border-radius: 800px; overflow: hidden"
+            >
+              <div
+                class="flex-fill d-flex justify-content-center align-items-center"
+              >
+              <a href="" class="fs-2 footer-top-icon"><i class="fa-solid fa-phone"></i></a>
+              </div>
+              <div
+                class="flex-fill d-flex justify-content-center align-items-center"
+                style="
+                  border-left: 1px solid gray;
+                  border-right: 1px solid gray;
+                "
+              >
+                
+                <a href="" class="fs-2 footer-top-icon"><i class="fa-brands fa-whatsapp"></i></a>
+              </div>
+              <div
+                class="flex-fill d-flex justify-content-center align-items-center"
+              >
+                <a href="" class="fs-2 footer-top-icon"><i class="fa-solid fa-envelope"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer style="margin-top: -40px">
+      <style>
+        .footer-social-link {
+          color: white;
+          transition: all 0.3s;
+        }
+        .footer-social-link:hover {
+          transform: scale(1.3);
+        }
+      </style>
+      <div class="py-5" style="background-color: #3d4461; color: white">
+        <div class="container pt-5">
+          <div class="row">
+            <div class="col-md-5">
+              <a href="" class="d-block mb-4">
+                <img
+                  src="https://sastoseba24.com/wp-content/uploads/2020/10/SastoSeba-Logo-150x150-1.png"
+                  alt="image"
+                  style="height: 50px; width: auto"
+                />
+              </a>
+              <p>
+                You Need Best Doctor, Hospital or Ambulance? Just visit
+                www.Sastoseba.com or Call : 01774-211151 We have Best & Verified
+                Doctors. Book Doctors Schedule and visit their Chamber Easily.
+                You Can Given Test Sample & Get Report at Home. So Think We are
+                your Best Medical Partner. Thanks You.
+              </p>
+              <!-- <a href="#" class="d-block"
+                ><i class="bi bi-envelope"></i> info@sastoseba24.com</a
+              >
+              <a href="#" class="d-block"
+                ><i class="bi bi-telephone"></i> (+88) 01774-211151</a
+              > -->
+              <div class="d-flex mt-4 fs-5 gap-2">
+                <a href="" class="footer-social-link"
+                  ><i class="fa-brands fa-facebook-f"></i
+                ></a>
+                <a href="" class="footer-social-link"
+                  ><i class="fa-brands fa-facebook-messenger"></i
+                ></a>
+                <a href="" class="footer-social-link"
+                  ><i class="fa-brands fa-linkedin-in"></i
+                ></a>
+                <a href="" class="footer-social-link"
+                  ><i class="fa-brands fa-youtube"></i
+                ></a>
+                <a href="" class="footer-social-link"
+                  ><i class="fa-brands fa-twitter"></i
+                ></a>
+              </div>
+            </div>
+            <div class="col-md-3">
+              <h5>Useful Links</h5>
+              <a href="" class="d-block">Privacy Policy</a>
+              <a href="" class="d-block">Terms & Condition</a>
+            </div>
+            <div class="col-md-4">
+              <h5>Newsletter</h5>
+              <p>
+                Subscribe us for our Next Update. Recently we will offer another
+                Services.
+              </p>
+              <div>
+                <div class="input-group mb-3">
+                  <input
+                    type="text"
+                    class="form-control"
+                    placeholder="Enter your email"
+                    aria-label="Recipient’s username"
+                    aria-describedby="basic-addon2"
+                  />
+                  <span
+                    class="input-group-text btn btn-success"
+                    style="border-radius: 0px 5px 5px 0px"
+                    id="basic-addon2"
+                    ><i class="fa-solid fa-arrow-right"></i
+                  ></span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div
+        class="py-3"
+        style="background-color: #373d57; text-align: center; color: white"
+      >
+        Copyrights © 2025 by <a href="#">CompanyName</a>. All Rights Reserved.
+      </div>
+    </footer>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+      crossorigin="anonymous"
+    ></script>
+  </body>
 </html>
